@@ -4,3 +4,5 @@
  - Danilo
  - Elaine 
  - Victor
+
+Linguagens: HTML, CSS, Javascript e Jquery.
