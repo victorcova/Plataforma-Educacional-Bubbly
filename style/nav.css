@@ -1,0 +1,39 @@
+nav{    
+    font-family: Rubik;
+    padding: 35px 10px 35px 10px;        
+    text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline-block;    
+    margin-right: 50px;    
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-family: Rubik;
+    font-size: 16px;    
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: #363636;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    width: 0%;
+    background-color: tomato;
+    height: 2px;
+    transition: 300ms all;    
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}

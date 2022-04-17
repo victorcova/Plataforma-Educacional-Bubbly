@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,800&family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: Rubik;
+    height: 100vh;
+}
+
+main{
+    background-color: cadetblue;
+    padding: 35px 200px 0px 80px;
+}
+
+.titleMain{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 30pt;        
+    color: white;    
+}
+
+.subTitleMain{
+    font-family: Rubik;    
+    font-size: 20pt;        
+    color: azure;
+    padding-right: 220px;
+}
+
+.ctaMain{
+    background-color: tomato;
+    padding: 25px;
+    border: none;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #f9f9f9;
+    margin-top: 40px; 
+    width: 450px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+h2{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15pt;
+}
+
+h3{
+    font-family: Montserrat;
+    font-size: 15pt;
+}
+.tomato{
+    color: tomato;
+}
+.blueBubbly{
+    color: #205fff
+}
+
+.rowTopoSite{    
+    position: relative;
+    display: flex;    
+    background-color: #f9f9f9;    
+    height: 11vh;
+}
+
+.imgLogo{            
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    margin: -50;
+}
+nav{
+    position: absolute;
+    top: 8px;
+    left: 400px;
+    margin: -50;
+}
+
+.BEC{    
+    display: flex;
+    position: absolute;
+    top: 28px;
+    left: 1200px;
+    margin: -50;
+}
+
+.espaco40px{
+    padding-right: 40px;
+}
+
+.txtBusca{
+    background-color: #f9f9f9;
+    padding: 12px;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    font-family: Rubik;
+    font-size: 15px;
+    color: tomato;
+    float:left;
+    width: 300px;
+}
+#lupa{
+    float:left;
+    margin:10px 0px 0px -25px;
+    cursor:pointer;    
+}
+#lupa:after{
+    font-family:FontAwesome;
+    font-size:12px;
+    content:"\f002";
+    color: tomato;
+}
+
+.btCadastro{
+    background-color: tomato;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-family: Rubik;
+    color: #f9f9f9;    
+}
+
+.btEntrar{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    font-family: Rubik;
+    color: tomato;
+    margin-right: 20px;
+}
+
+.rowMain{    
+    position: relative;        
+    background-image: url("../img/bkgs/bkg-1.jpg");    
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+main{
+    position: absolute;
+    background-color: transparent;
+    width: calc(100% - 600px);
+    transform: translateX(100px);    
+    top: 60px;
+}
