@@ -254,8 +254,7 @@ main{
 }
 
 .ctaCurso{        
-    font-family: Rubik;
-    position: absolute;
+    font-family: Rubik;    
     background-color: tomato;
     padding: 14px;
     border: none;
@@ -266,7 +265,7 @@ main{
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    left: 115px;
+    margin: auto;    
 }
 
 .clear{
