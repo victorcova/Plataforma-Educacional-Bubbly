@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,800&family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
 
-*{
+*{    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -54,8 +54,19 @@ h2{
 
 h3{
     font-family: Montserrat;
-    font-size: 15pt;
+    font-size: 10pt;
+    text-transform: uppercase;
+    color: #464646;
 }
+
+.txtLight{        
+    font-family: Rubik;
+    font-size: 10pt;
+    font-weight: lighter;    
+    color: #464646;         
+    padding: 15px;   
+}
+
 .tomato{
     color: tomato;
 }
@@ -150,4 +161,118 @@ main{
     width: calc(100% - 600px);
     transform: translateX(100px);    
     top: 60px;
+}
+
+.carousel {    
+    width: 1200px;
+    margin: 20px auto;
+    padding-top: 20px;    
+  }
+
+.rowCarousel{
+    background-color: #f9f9f9;
+    padding: 60px 20px 40px 20px;
+    height: 70vh;
+}  
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 50px;line-height: 1;
+    opacity: 1;
+    color: tomato;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+    left: -55px;
+}
+.slick-next {
+    right: -28px;
+}
+
+.titCarousel{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 30pt;        
+    color: tomato;    
+    text-transform: uppercase;    
+    text-align: center;
+}
+
+.subTitCarousel{
+    font-family: Rubik;    
+    font-weight: lighter;
+    font-size: 16pt;        
+    color: gray;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cursoDestaque{
+    width: 200px;
+    height: 250px;    
+    border: 1px solid gray;
+    
+}
+
+.box_carousel{    
+    width: 250px;
+    height: 380px;
+    text-align: left;
+    border: tomato 1px solid;         
+    border-right: tomato 25px solid;    
+    border-top: none;
+    border-left: 1px dotted tomato;
+}
+.img-stars{                   
+    float: right; 
+    width: 60px;
+    padding: 16px 120px 10px 10px;
+}
+
+.nome-curso{            
+    float: left;
+    font-weight: bolder;
+    font-size: 20px;    
+    border-bottom: tomato 1px dotted;
+    margin: 15px;        
+}
+
+.cidade-avaliador{
+    display: block;
+    float: inline-start;
+    text-align: left;
+    font-style: italic;    
+    padding: 10px 0px 15px 0px;
+}
+
+.descr-avaliacao{
+    display: block;
+    text-align: justify;    
+    font-style: oblique;
+    padding: 2px 0px 15px 0px;
+}
+
+.ctaCurso{        
+    font-family: Rubik;
+    position: absolute;
+    background-color: tomato;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;    
+    font-size: 10pt;
+    color: #f9f9f9;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    left: 115px;
+}
+
+.clear{
+    clear: both;
+}
+
+.nomeProf{
+    padding: 15px;    
 }
