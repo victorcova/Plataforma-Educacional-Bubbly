@@ -75,10 +75,9 @@ h3{
 }
 
 .rowTopoSite{    
-    position: relative;
     display: flex;    
     background-color: #f9f9f9;    
-    height: 11vh;
+    height: 11vh;    
 }
 
 .imgLogo{            
@@ -190,6 +189,24 @@ main{
     right: -28px;
 }
 
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 16px;
+    padding-top: 18px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .titCarousel{
     font-family: Montserrat;
     font-weight: 800;
@@ -274,10 +291,4 @@ main{
 
 .nomeProf{
     padding: 15px;    
-}
-
-footer{
-    background-color: tomato;
-    height: 20vh;
-    margin: auto;
 }
