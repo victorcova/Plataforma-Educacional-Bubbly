@@ -1,5 +1,7 @@
+/* -------------- FONTES -------------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,800&family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
 
+/* -------------- BODY -------------- */
 *{    
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
 
 body{    
     font-family: Rubik;
+    font-size: 100%;
     height: 100vh;
 }
 
@@ -69,9 +72,6 @@ h3{
 
 .tomato{
     color: tomato;
-}
-.blueBubbly{
-    color: #205fff
 }
 
 .rowTopoSite{    
@@ -162,6 +162,40 @@ main{
     top: 60px;
 }
 
+
+.nome-curso{            
+    float: left;
+    font-weight: bolder;
+    font-size: 20px;    
+    border-bottom: tomato 1px dotted;
+    margin: 15px;        
+}
+
+.ctaCurso{        
+    font-family: Rubik;    
+    background-color: tomato;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;    
+    font-size: 10pt;
+    color: #f9f9f9;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: auto;    
+}
+
+/* -------------- CAROUSEL -------------- */
+
+.clear{
+    clear: both;
+}
+
+.nomeProf{
+    padding: 15px;    
+}
+
 .carousel {    
     width: 1200px;
     margin: 20px auto;
@@ -225,13 +259,6 @@ main{
     padding-top: 10px;
 }
 
-.cursoDestaque{
-    width: 200px;
-    height: 250px;    
-    border: 1px solid gray;
-    
-}
-
 .box_carousel{    
     width: 250px;
     height: 380px;
@@ -245,50 +272,4 @@ main{
     float: right; 
     width: 60px;
     padding: 16px 120px 10px 10px;
-}
-
-.nome-curso{            
-    float: left;
-    font-weight: bolder;
-    font-size: 20px;    
-    border-bottom: tomato 1px dotted;
-    margin: 15px;        
-}
-
-.cidade-avaliador{
-    display: block;
-    float: inline-start;
-    text-align: left;
-    font-style: italic;    
-    padding: 10px 0px 15px 0px;
-}
-
-.descr-avaliacao{
-    display: block;
-    text-align: justify;    
-    font-style: oblique;
-    padding: 2px 0px 15px 0px;
-}
-
-.ctaCurso{        
-    font-family: Rubik;    
-    background-color: tomato;
-    padding: 14px;
-    border: none;
-    border-radius: 4px;    
-    font-size: 10pt;
-    color: #f9f9f9;
-    width: 150px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: auto;    
-}
-
-.clear{
-    clear: both;
-}
-
-.nomeProf{
-    padding: 15px;    
 }
