@@ -7,4 +7,4 @@
 Linguagens: HTML, CSS, Javascript e Jquery.
 
 Page:
-https://victorcova.github.io/Plataforma-Educacional-Tera/
+https://victorcova.github.io/Plataforma-Educacional-Bubbly/
