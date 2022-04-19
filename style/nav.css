@@ -2,6 +2,15 @@ nav{
     font-family: Rubik;
     padding: 35px 10px 35px 10px;        
     text-transform: uppercase;
+    position: absolute;
+    top: 8px;
+    left: 400px;
+    margin: -50;
+}
+
+.navAtivo{    
+    border-bottom: 5px solid tomato;    
+    transition: 300ms all;    
 }
 
 nav ul li {
@@ -30,7 +39,7 @@ nav ul li a::after {
     bottom: 10;
     width: 0%;
     background-color: tomato;
-    height: 2px;
+    height: 5px;
     transition: 300ms all;    
 }
 
