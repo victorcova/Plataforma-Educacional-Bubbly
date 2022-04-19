@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="style/estilo.css">    
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">    
-    <title>Bubbly Afiliados</title>
+    <title>Bubbly a sua Plataforma Educacional completa</title>
     <script src="//code.jivosite.com/widget/ETXU8gRqo4" async></script>    
 </head>
-<body>    
+<body>
     <!-- NAVEGAÇÃO -->
     <header class="rowTopoSite">
 
@@ -24,9 +24,9 @@
         <nav>
             <ul>                
                 <li><a href="index.html">início</a></li>
-                <li><a href="quemsomos.html">quem somos</a></li>
+                <li class="navAtivo"><a href="quemsomos.html">quem somos</a></li>
                 <li><a href="cursos.html" id="listaDeCursos">nossos cursos</a></li>
-                <li class="navAtivo"><a href="afiliacao.html">torne-se um afiliado</a></li>                
+                <li><a href="afiliacao.html">torne-se um afiliado</a></li>                
             </ul>
         </nav>
 
@@ -42,80 +42,42 @@
 
     </header>
 
-    <!-- CHAMADA AFILIAÇÃO -->
-    <section class="rowMainPgAfiliacao">
-      <main>
-          <div class="titleMain">
-              <h1>Divulgue seu projeto educacional para <span class="tomato">mundo.</span><br>
-                O <span class="tomato">sucesso</span> é de todos!</h1>
-          </div>              
-          <div>
-            <div><input type="button" value="Divulgar meu curso" class="btDivulgarCurso" onclick="buscarCurso()"></div>              
+    <!-- QUEM SOMOS -->
+    <section class="rowQuemSomos">
+        <div class="boxQuemSomos">
+          <div><img src="img/quemsomos/foto-victor.jpg" alt="foto victor"></div>
+          <div class="nomeAutor">victor cova</div>
+          <div class="descrAutor">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nisi vitae blanditiis dolor asperiores deserunt, dolorem sunt ullam, ab eaque impedit! Veritatis ipsum totam amet nulla recusandae consequuntur alias voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur quis sed minus delectus exercitationem odio facilis aspernatur recusandae quae omnis cum dolores, sapiente temporibus voluptatum mollitia nemo culpa sit!
           </div>
-        </div>     
-      </main>
+          <div class="btGithub">
+            <a href="https://github.com/victorcova" target="_blank">
+              <i class="fa-brands fa-github fa-3x" style="color: white;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="boxQuemSomos">
+          <div><img src="img/quemsomos/foto-danilo.jpg" alt="foto victor"></div>
+          <div class="nomeAutor">danilo almeida</div>
+          <div class="descrAutor">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nisi vitae blanditiis dolor asperiores deserunt, dolorem sunt ullam, ab eaque impedit! Veritatis ipsum totam amet nulla recusandae consequuntur alias voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur quis sed minus delectus exercitationem odio facilis aspernatur recusandae quae omnis cum dolores, sapiente temporibus voluptatum mollitia nemo culpa sit!
+          </div>
+          <div class="btGithub">
+            <a href="https://github.com/daanalm" target="_blank">
+              <i class="fa-brands fa-github fa-3x" style="color: white;"></i>
+            </a>
+          </div>
+        </div>        
+        
     </section>
 
-    <!-- [INICIO] CARDS VANTAGENS AFILIAÇÃO -->    
-    <section class="rowVantagensAfiliacao">
-        <div class="titCarousel">conheça as principais vantagens</div>        
-
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-flag fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>
-
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-heart fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>
+    <section class="rowQuemSomosDanilo">
         
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-mobile-button fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>
-        
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-earth-americas fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>                               
     </section>
 
-    <section class="rowVantagensAfiliacao boxAjuste">
-
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-sliders fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>
-
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-circle-play fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>
         
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-chalkboard-user fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>
-        
-        <div class="boxVantagens">            
-            <div class="fa_ico_vantagens"><i class="fa-solid fa-user-group fa-2x"></i></div>
-            <div class="titBoxVantagem">Lorem ipsum dolor sit</div>
-            <p class="txtVantagens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed itaque possimus reicie amet debitis, soluta volupta. Voluptatum odio fuga. </p>
-        </div>     
-                          
-    </section>    
-    <!-- [FIM] CARDS VANTAGENS AFILIAÇÃO -->   
-    
-   
-    <!-- FOOTER -->
+    <!-- FOOTER -->    
     <footer class="footer">
 
         <div class="footer__addr">
@@ -201,14 +163,14 @@
 
     <!-- ACESSIBILIDADE -->
     <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper"></div>
-    </div>
+      </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
     <!-- SCRIPTS -->    

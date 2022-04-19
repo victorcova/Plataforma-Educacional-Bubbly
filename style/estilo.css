@@ -219,6 +219,66 @@ h3{
     height: 80vh;
 }
 
+.rowQuemSomos{
+    position: relative;        
+    background-color: #f9f9f9;
+    height: 95vh;
+    padding-top: 50px;
+    border-top: 1px solid gainsboro;
+}
+
+.boxQuemSomos{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 302px;
+    border: tomato 1px dotted;    
+    border-left: 20px solid tomato;
+    border-radius: 0px 30px 30px 0px;
+    margin: 40px;
+    transform: translate(25%);
+    transition: 200ms all;    
+}
+
+.nomeAutor{
+    position: absolute;
+    vertical-align: top;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 40pt;
+    padding-left: 20px;    
+    text-transform: uppercase;
+    color: tomato;    
+    top: 10px;
+    left: 200px;
+    border-bottom: 4px solid tomato;
+}
+
+.descrAutor{
+    position: absolute;
+    vertical-align: baseline;
+    width: 70%;
+    font-family: Rubik;    
+    font-size: 13pt;
+    text-align: justify;
+    padding-left: 25px;        
+    color: black;
+    top: 95px;
+    left: 200px;    
+}
+
+.btGithub{
+    position: absolute;
+    background-color: tomato;
+    text-align: center;
+    width: 80px;
+    padding: 12px;
+    border-radius: 4px;
+    top: 260px;
+    right: 60px;    
+    cursor: pointer;
+}
+
 .rowMainPgCursos{    
     position: relative;        
     background-image: url("../img/bkgs/bkg-2.jpg");    
