@@ -192,6 +192,20 @@ nav{
     cursor: pointer;
 }
 
+.btDivulgarCurso{
+    background-color: tomato;
+    padding: 15px;
+    margin: 39px 10px 10px 10px;
+    width: 220px;
+    border: none;
+    border-radius: 4px;
+    font-family: Rubik;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f9f9f9;    
+    cursor: pointer;
+}
+
 .btEntrar{
     background-color: white;
     padding: 12px;
@@ -216,6 +230,13 @@ nav{
     background-image: url("../img/bkgs/bkg-2.jpg");    
     background-repeat: no-repeat;
     height: 60vh;
+}
+
+.rowMainPgAfiliacao{    
+    position: relative;        
+    background-image: url("../img/bkgs/bkg-3.jpg");    
+    background-repeat: no-repeat;
+    height: 55vh;
 }
 
 main{

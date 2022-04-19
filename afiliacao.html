@@ -3,55 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Plataforma educacional</title>
+    <link rel="stylesheet" href="style/estilo.css">    
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">    
+    <title>Bubbly Cursos</title>
+    <!-- <script src="//code.jivosite.com/widget/ETXU8gRqo4" async></script>     -->
 </head>
-<body>
-    <style>
-        a {
-            text-decoration: none;
-        }
-    </style>
-    <header>
-        <div>
-            <nav>
-                <ul>
-                <li><a href="index.html"><img src="img/icons/logo 50 50 px.png" alt="Imagem contendo o logo da plataforma de ensino"></a></li>
-                <li><a href="cursos.html" id="listaDeCursos">Cursos</a></li>
-                <li><a href="afiliacao.html">Afiliação</a></li>
-                <!-- <li><img src="" alt=""></li> Ícone de lupa? -->
-                <li><input type="text" placeholder="Busca"></li>
-                <li><button>Entrar</button></li>
-                <li><button>Cadastre-se!</button></li>
-            </ul>
-            </nav>
+<body>    
+    <!-- NAVEGAÇÃO -->
+    <header class="rowTopoSite">
+
+        <div class="imgLogo">
+            <a href="index.html"><img src="img/icons/logo-bubbly.png" alt="Imagem contendo o logo da plataforma de ensino"></a>
         </div>
+
+        <nav>
+            <ul>                
+                <li><a href="index.html">início</a></li>
+                <li><a href="cursos.html">quem somos</a></li>
+                <li><a href="cursos.html" id="listaDeCursos">nossos cursos</a></li>
+                <li><a href="afiliacao.html">torne-se um afiliado</a></li>                
+            </ul>
+        </nav>
+
+        <div class="BEC">
+            <div class="espaco40px">
+                <input class="txtBusca" type="text" placeholder="Busque seu curso" id="txtNomeCursoBusca">
+                <div id="lupa" onclick="buscarCurso()"></div>
+            </div>            
+            <div class="btEntrar">Entrar <i class="fa-solid fa-user-check"></i></div>        
+            <div class="btCadastro">Cadastre-se <i class="fa-solid fa-user-plus"></i></div>            
+        </div>       
+        
+
     </header>
-        <section>
-            <h2>Porque trabalhar conosco?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur veniam voluptate sed quasi odio provident sequi, laudantium iste iure ducimus error tenetur soluta minus harum facere! Et, neque itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt cum, harum recusandae fuga illum et quis quae unde nulla tempora deleniti quos! Repellendus nobis neque, nulla molestias deleniti dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugiat quia veniam sapiente praesentium minus qui doloremque, cumque animi dolore incidunt. Possimus accusantium laudantium nobis, cupiditate quam deserunt esse eveniet.</p>
-        </section>
-        <section>
-            <h2>Confira nossas vantagens:</h2>
-            <div class="afiliacaoVantagens">
-                <div>Motivo 1</div>
-                <div>Motivo 2</div>
-                <div>Motivo 3</div>
-                <div>Motivo 4</div>
-                <div>Motivo 5</div>
-                <div>Motivo 6</div>
-            </div>
-        </section>
-    <footer>
-        <a href="">Termos de uso</a>
-        <a href="">Política de privacidade</a>
-        <p>Todos os direitos reservados &#169</p>
-        <p>Endereço, CNPJ</p>
-        <a href=""><img src="img/icons/face.png" alt="Ícone que redireciona ao facebook"></a>
-        <a href=""><img src="img/icons/insta.png" alt="Ícone que redireciona ao instagram"></a>
-        <a href=""><img src="img/icons/tiktok.png" alt="Ícone que redireciona ao linkedin"></a>
-        <div><i class="fa-brands fa-facebook"></i></div>
-    </footer>    
+
+    <!-- VANTAGENS AFILIAÇÃO -->
+    <section class="rowMainPgAfiliacao">
+      <main>
+          <div class="titleMain">
+              <h1>Divulgue seu projeto educacional para <span class="tomato">mundo.</span><br>
+                O <span class="tomato">sucesso</span> é de todos!</h1>
+          </div>              
+          <div>
+            <div><input type="button" value="Divulgar meu curso" class="btDivulgarCurso" onclick="buscarCurso()"></div>              
+          </div>
+        </div>     
+      </main>
+    </section>
+
+    <!-- [INICIO] SECTION: CARROSSEL CATEGORIA DE CURSOS -->    
+
+    <!-- categoria: tecnologia -->    
+    <section class="rowCarouselpgCursos" id="tecnologia">
+       
+    </section>
+
+    <!-- categoria: educação portugues -->    
+    <section class="rowCarouselpgCursos" id="portugues">
+      <div class="titCarouselpgCursos">cursos de português</div>
+      <div class="carousel">
+
+          <div class="box_carousel">                    
+                  <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt=""></div>
+                  <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
+                  <span class="nome-curso">Gramática Básica</span>
+                  <div class="clear"></div>
+                  <div class="nomeProf"><em>Professor: Matheus Salles - 25 aulas</em></div>
+                  <div class="txtLight">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
+                  </div>
+                  <div class="ctaCurso">Matricule-se</div>
+          </div>    
+
+          <div class="box_carousel">                    
+            <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt=""></div>
+              <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
+              <span class="nome-curso">Redação</span>
+              <div class="clear"></div>
+              <div class="nomeProf"><em>Professora: Bianca Hertz - 125 aulas</em></div>
+              <div class="txtLight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
+              </div>
+              <div class="ctaCurso">Matricule-se</div>
+          </div>    
+      
+          <div class="box_carousel">                    
+            <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt=""></div>
+              <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
+              <span class="nome-curso">Regência Verbal</span>
+              <div class="clear"></div>
+              <div class="nomeProf"><em>Professor: Danilo Shulz - 62 aulas</em></div>
+              <div class="txtLight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
+              </div>
+              <div class="ctaCurso">Matricule-se</div>
+          </div>            
+          
+          <div class="box_carousel">                    
+            <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt=""></div>
+              <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
+              <span class="nome-curso">Regência Nominal</span>
+              <div class="clear"></div>
+              <div class="nomeProf"><em>Professora: Pollyana Veras - 25 aulas</em></div>
+              <div class="txtLight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
+              </div>
+              <div class="ctaCurso">Matricule-se</div>
+          </div>    
+
+          <div class="box_carousel">                    
+            <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt=""></div>
+              <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
+              <span class="nome-curso">Concursos Públicos</span>
+              <div class="clear"></div>
+              <div class="nomeProf"><em>Professor: Bruno Titã - 99 aulas</em></div>
+              <div class="txtLight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
+              </div>
+              <div class="ctaCurso">Matricule-se</div>
+          </div>    
+          
+          <div class="box_carousel">                                  
+            <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt=""></div>
+              <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
+              <span class="nome-curso">Gramática Gompleta</span>
+              <div class="clear"></div>
+              <div class="nomeProf"><em>Professora: Maria Helena - 43 aulas</em></div>
+              <div class="txtLight">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
+              </div>
+              <div class="ctaCurso">Matricule-se</div>
+          </div>                
+
+          </div>
+    </section>    
+          
+    </section>    
+    <!-- [FIM] SECTION: CARROSSEL CATEGORIA DE CURSOS -->    
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__addr">
+          <h1 class="footer__logo">Bubbly</h1>              
+          <h2>Contatos</h2>          
+          <address>
+            Brasília SCS 6 Bloco Antares Sala 223 - DF<br>                
+            <a class="footer__btn" href="mailto:bubbly@bubbly.com">Envie um e-mail</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Quem somos</h2>      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Nossa história</a>
+              </li>
+      
+              <li>
+                <a href="#">Parceiros</a>
+              </li>
+                  
+              <li>
+                <a href="#">Missão, visão e valores</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Últimos Cursos</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Secretária Executiva</a>
+              </li>
+              
+              <li>
+                <a href="#">Studio Adobe</a>
+              </li>
+              
+              <li>
+                <a href="#">Edição de vídeos</a>
+              </li>
+              
+              <li>
+                <a href="#">JavaScript Avançado</a>
+              </li>
+              
+              <li>
+                <a href="#">Corte e costura</a>
+              </li>
+              
+              <li>
+                <a href="#">Make definitiva</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Política de privacidade</a>
+              </li>
+              
+              <li>
+                <a href="#">Termos de uso</a>
+              </li>
+              
+              <li>
+                <a href="#">Mapa do site</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2022 | <span><i class="fa-solid fa-user-gear"></i> Desenvolvido por: Danilo Almeida e Victor Cova</span> | <em>For Tera DEV's</em></p>
+        </div>
+      </footer>
+
+    <!-- ACESSIBILIDADE -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- SCRIPTS -->    
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
