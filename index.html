@@ -15,32 +15,34 @@
 </head>
 <body>
     <!-- NAVEGAÇÃO -->
-    <!-- <header class="rowTopoSite">
+    <header class="rowTopoSite">
 
-        <div class="imgLogo">
-            <a href="index.html"><img src="img/icons/logo-bubbly.png" alt="Imagem contendo o logo da plataforma de ensino"></a>
+        <div>
+            <a href="index.html"><img class="imgLogo" src="img/icons/logo-bubbly.png"  alt="Imagem contendo o logo da plataforma de ensino"></a>
         </div>
 
         <nav>
             <ul>                
-                <li class="navAtivo"><a href="index.html">início</a></li>
-                <li><a href="quemsomos.html">quem somos</a></li>
-                <li><a href="cursos.html" id="listaDeCursos">nossos cursos</a></li>
-                <li><a href="afiliacao.html">torne-se um afiliado</a></li>                
+                <li class="navAtivo"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>                
+                <li><a href="cursos.html" id="listaDeCursos">cursos</a></li>
+                <li><a href="afiliacao.html">afilie-se</a></li>                
             </ul>
         </nav>
 
         <div class="BEC">
-            <div class="espaco40px">
+            <div>
                 <input class="txtBusca" type="text" placeholder="Busque seu curso" id="txtNomeCursoBusca">
                 <div id="lupa" onclick="buscarCurso()"></div>
             </div>            
-            <div class="btEntrar">Entrar <i class="fa-solid fa-user-check"></i></div>        
+            <div class="btEntrar">Entrar <i class="fa-solid fa-user-check"></i></div>  
+            <div id="check"></div>
+
             <div class="btCadastro">Cadastre-se <i class="fa-solid fa-user-plus"></i></div>            
+
         </div>       
         
 
-    </header> -->
+    </header>
 
     <!-- SOBRE NÓS -->
     <section class="rowMain">
@@ -48,96 +50,114 @@
             <div class="titleMain">
                 <h1>Colocamos seu curso em <span class="tomato">evidência</span> para o mundo!</h1>
             </div>
-                <!-- <p class="subTitleMain"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="subTitleMain">Aut, distinctio eius aliquid, velit voluptas nulla recusandae ipsum et eum doloribus magni incidunt.</p> -->
-                <!-- <div class="ctaMain">quero começar meu negócio online <i class="fa-solid fa-globe"></i></div>             -->
+                <p class="subTitleMain">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, distinctio eius aliquid, velit voluptas nulla recusandae ipsum et eum doloribus magni incidunt.
+                </p>
+                
+                <div class="ctaMain">quero aproveitar</div>            
         </main>
     </section>
 
     <!-- SECTION: CARROSSEL CURSOS EM DESTAQUE -->    
-    <!-- <section class="rowCarousel">
-        <div class="titCarousel">Tudo em um só lugar</div>
-        <div class="subTitCarousel">Confira os mais bem avaliados</div>
-        
-        <div class="carousel">
+    <section class="rowCarousel">
+      <div class="titCarousel">Tudo em um só lugar</div>
+      <div class="subTitCarousel">Confira os mais bem avaliados</div>
 
-            <div class="box_carousel">                    
-                    <div ><img src="img/tag_cursos/tag-tecnologia.jpg" width="374px" alt="foto curso JS"></div>
-                    <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
-                    <span class="nome-curso">Javascript Básico</span>
-                    <div class="clear"></div>
-                    <div class="nomeProf"><em>Professor: Matheus Salles - 25 aulas</em></div>
-                    <div class="txtLight">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
-                    </div>
-                    <div class="ctaCurso">Matricule-se</div>
-            </div>    
+      <div class="slider">
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-tecnologia.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">JavaScript Básico</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">56 aulas</div>
+            <div class="margem bold">Professor(a): Rondson Lima</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div>          
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-gastronomia.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Gastronomia</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">89 aulas</div>
+            <div class="margem bold">Professor(a): Lisandro Motta</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-musica.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Música</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">212 aulas</div>
+            <div class="margem bold">Professor(a): Elayne Cliff</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-empreendedorismo.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Empreendedorismo</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">126 aulas</div>
+            <div class="margem bold">Professor(a): Dagobertto Lucca</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-educacao-fisica.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Educação Física</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">98 aulas</div>
+            <div class="margem bold">Professor(a): Traco Lopes</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-marketing.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Planejamento - Comunicação e Marketing</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">48 aulas</div>
+            <div class="margem bold">Professor(a): Helena de Sá</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-ingles.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Inglês Básico</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">100 aulas</div>
+            <div class="margem bold">John Cliverland</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-gramatica.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Gramática Completa</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">56 aulas</div>
+            <div class="margem bold">Edgard Costa</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa completa</div>
+          </div> 
+        </div>
+      </div>
 
-            <div class="box_carousel">                    
-                <div ><img src="img/tag_cursos/tag-empreendedorismo.jpg" width="374px" alt="foto curso JS"></div>
-                <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
-                <span class="nome-curso">Empreendedorismo</span>
-                <div class="clear"></div>
-                <div class="nomeProf"><em>Professora: Bianca Hertz - 125 aulas</em></div>
-                <div class="txtLight">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
-                </div>
-                <div class="ctaCurso">Matricule-se</div>
-            </div>    
-        
-            <div class="box_carousel">                    
-                <div ><img src="img/tag_cursos/tag-gastronomia.jpg" width="374px" alt="foto curso JS"></div>
-                <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
-                <span class="nome-curso">Gastronomia</span>
-                <div class="clear"></div>
-                <div class="nomeProf"><em>Professor: Danilo Shulz - 62 aulas</em></div>
-                <div class="txtLight">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
-                </div>
-                <div class="ctaCurso">Matricule-se</div>
-            </div>            
-            
-            <div class="box_carousel">                    
-                <div ><img src="img/tag_cursos/tag-marketing.jpg" width="374px" alt="foto curso JS"></div>
-                <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
-                <span class="nome-curso">Marketing</span>
-                <div class="clear"></div>
-                <div class="nomeProf"><em>Professora: Pollyana Veras - 25 aulas</em></div>
-                <div class="txtLight">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
-                </div>
-                <div class="ctaCurso">Matricule-se</div>
-            </div>    
-
-            <div class="box_carousel">                    
-                <div ><img src="img/tag_cursos/tag-educacao-fisica.jpg" width="374px" alt="foto curso JS"></div>
-                <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
-                <span class="nome-curso">Educação Física</span>
-                <div class="clear"></div>
-                <div class="nomeProf"><em>Professor: Bruno Titã - 99 aulas</em></div>
-                <div class="txtLight">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
-                </div>
-                <div class="ctaCurso">Matricule-se</div>
-            </div>    
-            
-            <div class="box_carousel">                    
-                <div ><img src="img/tag_cursos/tag-gramatica.jpg" width="374px" alt="foto curso JS"></div>
-                <div class="img-stars"><img src="img/icons/rating.png" height="20px" alt="icon-five-stars"></div>
-                <span class="nome-curso">Gramática Básica</span>
-                <div class="clear"></div>
-                <div class="nomeProf"><em>Professora: Maria Helena - 43 aulas</em></div>
-                <div class="txtLight">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore qui in quos et necessitatibus sint amet? Nemo libero iure voluptates beatae, quo totam est maiores dicta quisquam, laborum praesentium.
-                </div>
-                <div class="ctaCurso">Matricule-se</div>
-            </div>                
-
-            </div>
-    </section> -->
+    </section>
     
     <!-- FOOTER -->    
-    <!-- <footer class="footer">
+    <footer class="footer">
 
         <div class="footer__addr">
           <h1 class="footer__logo">Bubbly</h1>              
@@ -218,7 +238,7 @@
         <div class="legal">
           <p>&copy; 2022 | <span><i class="fa-solid fa-user-gear"></i> Desenvolvido por: Danilo Almeida e Victor Cova</span> | <em>For Tera DEV's</em></p>
         </div>
-      </footer> -->
+      </footer>
 
     <!-- ACESSIBILIDADE -->
     <!-- <div vw class="enabled">

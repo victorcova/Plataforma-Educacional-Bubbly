@@ -7,61 +7,55 @@ body{
     font-family: Rubik;        
     min-height: 100vh;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .rowMain{        
     background-image: url("../img/bkgs/bkg-1.jpg");    
+    background-position: right top;
     background-repeat: no-repeat;
-    height: 22em;        
+    height: 22em;
+    padding-top: 80px;
 }
 
 .titleMain{        
     display: block;    
     font-family: Montserrat;        
-    font-size: calc(12px + 1.2vw);
-    color: white;
-    width: 25em;
-    margin-block-start: 1.3em;
-    margin-block-end: 0.75em;
-    margin-inline-start: 40px; 
-    margin-inline-end: 100px;    
+    font-size: calc(12px + 0.6vw);
+    color: white;    
+    margin-left: 40px;
+    padding: 30px 0px 0px 80px;
+    padding-right: calc(20px + 20%);
 }
 
 .subTitleMain{
     display: block;
-    /* margin-block-start: 0.75em;
-    margin-block-end: 0.75em;
-    margin-inline-start: 40px;     */
     font-family: Rubik;       
     font-size: calc(10px + 0.6vw); 
-    color: azure;   
-    width: 30em;     
+    color: #f9f9f9;   
+    margin-left: 40px;
+    padding: 5px 0px 0px 80px;
+    padding-right: calc(10px + 40%);
 }
 
 .ctaMain{
-    background-color: tomato;
-    padding: 25px;
-    border: none;
-    border-radius: 4px;
-    font-family: Rubik;
-    font-weight: 400;
-    font-size: 0.9rem;
-    color: #f9f9f9;
-    margin-top: 40px; 
-    width: 350px;
+    /* display: block; */
+    font-family: Rubik;       
+    font-size: calc(10px + 0.15vw); 
+    color: #f9f9f9;       
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    display: block;
-    margin-block-start: 2.75em;
-    margin-block-end: 0.75em;
-    margin-inline-start: 40px;
-}
-
-h1{
-    margin: 0;
-    padding: 0;            
+    margin-top: 40px; 
+    margin-left: 120px;
+    padding: 15px;    
+    line-height: 1.4em;
+    border: none;
+    border-radius: 4px;        
+    background-color: tomato;
+    color: #f9f9f9;
+    width: 200px;
+    
 }
 
 h2{
@@ -82,7 +76,8 @@ h3{
     font-size: 10pt;
     font-weight: lighter;    
     color: #464646;         
-    padding: 15px;   
+    padding-left: 15px;    
+    padding-bottom: 20px;
 }
 
 .tomato{
@@ -92,25 +87,30 @@ h3{
 }
 
 .rowTopoSite{    
+    position: fixed;
     display: flex;    
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
     background-color: #f9f9f9;    
-    height: 11vh;    
+    height: 4.25em;
+    width: 100%;
 }
 
-.imgLogo{            
-    position: absolute;
-    top: 20px;
-    left: 100px;
-    margin: -50;
+.imgLogo{                
+    width: 100px;
+    margin: 18px;
 }
 
-.BEC{    
-    display: flex;
-    position: absolute;
-    top: 28px;
-    left: 1200px;
-    margin: -50;
+.BEC{            
+    display: inline-flex;    
+    margin-right: 10px;
+    margin-top: 12px;
 }
+@media screen and (max-width: 860px) {
+    .BEC {
+      display: none;
+    }
+  }
 
 .subTitleMainCursos{
     font-family: Rubik;    
@@ -141,25 +141,25 @@ h3{
 
 .txtBusca{
     background-color: #f9f9f9;
-    padding: 12px;
+    padding: 11px 20px 12px 10px;
     border: 1px solid tomato;
     border-radius: 4px;
     font-family: Rubik;
-    font-size: 15px;
-    color: tomato;
-    float:left;
-    width: 300px;
+    font-size: 0.8em;
+    color: tomato;        
+    margin-right: 20px;
+    border-right: 30px solid tomato;
+    width: auto;
 }
-#lupa{
-    float:left;
-    margin:10px 0px 0px -25px;
+#lupa{    
+    margin: -30px 0px 0px 189px;
     cursor:pointer;    
 }
 #lupa:after{
     font-family:FontAwesome;
     font-size:12px;
     content:"\f002";
-    color: tomato;
+    color: #f9f9f9;
 }
 
 .txtBuscaMain{
@@ -176,19 +176,25 @@ h3{
 }
 
 .btCadastro{
-    background-color: tomato;
+    background-color: #f9f9f9;
     padding: 12px;
-    border: none;
+    border: 1px solid tomato;
     border-radius: 4px;
+    border-right: 10px solid tomato;
     font-family: Rubik;
-    color: #f9f9f9;    
-    width: 150px;
+    color: tomato;
     text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    height: 18px;
+    width: 110px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 .btBuscar{
     background-color: tomato;
-    padding: 15px;
+    padding: 12px;
     margin: 39px 10px 10px 10px;
     width: 120px;
     border: none;
@@ -214,17 +220,22 @@ h3{
     cursor: pointer;
 }
 
-.btEntrar{
+.btEntrar{    
     background-color: white;
-    padding: 12px;
-    border: 1px solid tomato;
+    padding: 10px;
+    height: 18px;
+    width: 70px;
+    margin-right: 10px;
+    border: 1px solid gray;
     border-radius: 4px;
     font-family: Rubik;
-    color: tomato;
-    margin-right: 20px;
-    width: 100px;
+    color: gray;
     text-align: center;
+    font-size: 0.8em;
+    border-right: 10px solid gray;
+    cursor: pointer;
 }
+
 
 .rowQuemSomos{
     position: relative;        
@@ -300,19 +311,18 @@ h3{
     height: 55vh;
 }
 
-main{
-    position: absolute;
+main{    
     background-color: transparent;    
-    transform: translateX(50px);        
+    /* transform: translateX(50px);         */
 }
 
 
 .nome-curso{            
     float: left;
     font-weight: bolder;
-    font-size: 20px;    
+    font-size: 1em;    
     border-bottom: tomato 1px dotted;
-    margin: 15px;        
+    margin: 20px;        
 }
 
 .ctaCurso{        
@@ -385,19 +395,21 @@ main{
 }
 
 .nomeProf{
-    padding: 15px;    
+    padding-left: 15px;    
+    padding-bottom: 10px;
 }
 
 .carousel {    
-    width: 1200px;
+    width: auto;
     margin: 20px auto;
     padding-top: 20px;    
+    height: auto;
   }
 
 .rowCarousel{
-    background-color: #f9f9f9;
-    padding: 60px 20px 40px 20px;
-    height: 70vh;
+    background-color: antiquewhite;
+    padding: 60px 60px 40px 60px;
+    height: 42em;    
 }  
 
 .rowCarouselpgCursos{
@@ -406,20 +418,70 @@ main{
     height: 65vh;
     border-bottom: gray dotted 1px;
 }  
+          
+.boxCurso{    
+    border: 1px solid tomato;
+    border-right: tomato 10px solid;
+    background-color: #f9f9f9;
+    border-radius: 20px 0px 0px 0px;
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.margem{
+    margin: 20px;
+}
+
+.imgcurso{
+    background-color: tomato;        
+    border-radius: 0px 10px 10px 0px;
+}
+
+.titcurso{
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.rating{
+
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.txtdecricao{
+    text-align: justify;
+}
+
+.ctacurso{
+    background-color: tomato;
+    padding: 20px;
+    border-radius: 4px;    
+    text-align: center;
+    color: #f9f9f9;
+    text-transform: uppercase;
+}
 
 .slick-prev:before, .slick-next:before {
     font-family: 'slick';
-    font-size: 50px;line-height: 1;
+    font-size: 40px;line-height: 1;
     opacity: 1;
     color: tomato;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-prev {
-    left: -55px;
+    left: -25px;
 }
 .slick-next {
-    right: -28px;
+    right: -8px;
 }
 
 .slick-dots li button:before {
@@ -443,7 +505,7 @@ main{
 .titCarousel{
     font-family: Montserrat;
     font-weight: 800;
-    font-size: 30pt;        
+    font-size: 2em;        
     color: tomato;    
     text-transform: uppercase;    
     text-align: center;
@@ -462,7 +524,7 @@ main{
 .subTitCarousel{
     font-family: Rubik;    
     font-weight: lighter;
-    font-size: 16pt;        
+    font-size: 1em;        
     color: gray;
     text-align: center;
     padding-top: 10px;
@@ -479,6 +541,6 @@ main{
 }
 .img-stars{                   
     float: right; 
-    width: 60px;
+    width: 5px;
     padding: 16px 120px 10px 10px;
 }
