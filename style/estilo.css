@@ -2,36 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,800&family=Rubik:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
 
 /* -------------- BODY -------------- */
-*{    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body{    
-    font-family: Rubik;
-    font-size: 100%;
-    height: 100vh;
-    width: 100%;
+    font-family: Rubik;        
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-main{
-    background-color: cadetblue;
-    padding: 35px 200px 0px 80px;
+.rowMain{        
+    background-image: url("../img/bkgs/bkg-1.jpg");    
+    background-repeat: no-repeat;
+    height: 22em;        
 }
 
-.titleMain{
-    font-family: Montserrat;
-    font-weight: 800;
-    font-size: 30pt;        
-    color: white;    
+.titleMain{        
+    display: block;    
+    font-family: Montserrat;        
+    font-size: calc(12px + 1.2vw);
+    color: white;
+    width: 25em;
+    margin-block-start: 1.3em;
+    margin-block-end: 0.75em;
+    margin-inline-start: 40px; 
+    margin-inline-end: 100px;    
 }
 
 .subTitleMain{
-    font-family: Rubik;    
-    font-size: 20pt;        
-    color: azure;
-    padding-right: 220px;
+    display: block;
+    /* margin-block-start: 0.75em;
+    margin-block-end: 0.75em;
+    margin-inline-start: 40px;     */
+    font-family: Rubik;       
+    font-size: calc(10px + 0.6vw); 
+    color: azure;   
+    width: 30em;     
 }
 
 .ctaMain{
@@ -39,15 +44,24 @@ main{
     padding: 25px;
     border: none;
     border-radius: 4px;
-    font-family: Montserrat;
+    font-family: Rubik;
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 0.9rem;
     color: #f9f9f9;
     margin-top: 40px; 
-    width: 450px;
+    width: 350px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    display: block;
+    margin-block-start: 2.75em;
+    margin-block-end: 0.75em;
+    margin-inline-start: 40px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;            
 }
 
 h2{
@@ -212,13 +226,6 @@ h3{
     text-align: center;
 }
 
-.rowMain{    
-    position: relative;        
-    background-image: url("../img/bkgs/bkg-1.jpg");    
-    background-repeat: no-repeat;
-    height: 80vh;
-}
-
 .rowQuemSomos{
     position: relative;        
     background-color: #f9f9f9;
@@ -295,10 +302,8 @@ h3{
 
 main{
     position: absolute;
-    background-color: transparent;
-    width: calc(100% - 600px);
-    transform: translateX(100px);    
-    top: 60px;
+    background-color: transparent;    
+    transform: translateX(50px);        
 }
 
 

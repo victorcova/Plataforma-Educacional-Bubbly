@@ -5,44 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="style/logcad.css">
 </head>
 <body>
     <header>
         <a href="index.html"><img src="img/icons/logo 50 50 px.png" alt="Imagem com o logo da empresa"></a>
     </header>
     <section>
-        <p>
-            <input type="button" value="Cadastre-se com o Facebook">
-        </p>
-        <p>Nome completo:</p>
-        <p>
-            <input type="text" placeholder="Fulano deTal">
-        </p>
-        <p>Usuário:</p>
-        <p>
-            <input type="email" placeholder="fulanodetal@seuemail.com" autocomplete="on">
-        </p>
-        <p>Senha:</p>
-        <p>
-            <input type="password" name="senha" id="senha" >
-        </p>Tem que ter pelo menos 8 dígitos, um caractere especial e uma maiúscula<p>
-        </p>
+    <div id="content">
+        <input type="button" value="Cadastre-se com o Facebook" id="faceBtn">
+        <p><label for="username">Nome completo:</label></p>
+        <input type="text" class="form">
+        <p><label for="email">Email:</label></p>
+        <input type="email" placeholder="seuemail@dominio.com" autocomplete="on" class="form">
+        <p><label for="password">Senha (Mínimo de 8 caracteres):</label></p>
+        <input type="password" name="senha" id="senha" minlength="8" class="form">
         <p>O que você busca?</p>
-        <p><input type="button" value="Vender Produtos"> <input type="button" value="Comprar Produtos"></p>
-        <p>
-        <input type="checkbox"> Estou ciente dos <a href="">Termos de uso</a> e <a href="">Políticas</a> da nossa empresa.
-        </p>
-        <p>
-            <input type="button" value="Continuar">
-        </p>
-        Já possui uma conta? <a href="login.html" style="color: blue;">acesse aqui!</a>
-        </p>
+        <div id="compraVenda">
+            <input type="button" value="Vender Produtos" class="btnLaranja"> <input type="button" value="Comprar Produtos" class="btnLaranja">
+        </div>    
+        <p><input type="checkbox"> Estou ciente dos <a href="">Termos de uso</a> e <a href="">Políticas</a> da nossa empresa.</p>
+        <input type="button" value="Continuar" class="btnLaranja">
+        <p>Já possui uma conta? <a href="login.html" style="color: blue;">acesse aqui!</a></p>
+    </div>    
     </section>    
 </body>
 </html>
