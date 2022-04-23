@@ -127,6 +127,12 @@ h3{
     margin: 18px;
 }
 
+.imgLogof{
+    width: 150px;
+    margin: 10px;
+}
+
+
 .BEC{            
     display: inline-flex;    
     margin-right: 10px;
@@ -424,6 +430,15 @@ main{
     background-color: #f9f9f9;
 }
 
+.socialmedia{
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.socialSpacer{
+    margin: 10px;
+}
+
 /* -------------- CAROUSEL -------------- */
 
 .clear{
@@ -661,13 +676,7 @@ main{
     padding: 16px 120px 10px 10px;
 }
 
-/* Scroolbar personalizada */
-
-* {
-    /* scrollbar-width: thin; */
-    /* scrollbar-color: tomato #f9f9f9; */
-  }
-  
+/* Scroolbar personalizada */  
   /* Works on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 15px;    
