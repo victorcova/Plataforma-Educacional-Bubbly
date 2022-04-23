@@ -117,8 +117,9 @@ h3{
     /* justify-content: space-between; */
     justify-content: space-evenly;
     background-color: #f9f9f9;    
-    height: 4.25em;
+    height: auto;
     width: 100%;
+    z-index: 1;
 }
 
 .imgLogo{                
@@ -631,11 +632,12 @@ main{
 }
 
 .icoFlag{    
+    position: static;
     float: right;
     transform: rotate(45deg);
     color: tomato;
     margin: 15px;
-    margin-top: -35px;
+    margin-top: -35px;    
 }
 
 .descrLeftVantagens{
