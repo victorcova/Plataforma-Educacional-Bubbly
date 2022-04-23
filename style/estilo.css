@@ -442,7 +442,7 @@ main{
   }
 
 .rowCarousel{
-    background-color: antiquewhite;
+    background-color: #f9f9f9;
     padding: 60px 60px 40px 60px;
     height: auto;
     margin: auto;
@@ -465,7 +465,8 @@ main{
 }  
 
 .rowShowCategorias{
-    background-color: antiquewhite;
+    background-image: url("../img/bkgs/bkg-4.jpg");    
+    background-position: center;    
     padding: 60px 60px 40px 60px;
     border-bottom: gray dotted 1px;
     height: auto;
