@@ -3,7 +3,7 @@
 $('.slider').slick({
   dots: true,
   infinite: false,
-  speed: 300,
+  speed: 600,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -12,7 +12,7 @@ $('.slider').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
+        infinite: false,
         dots: true
       }
     },
@@ -20,7 +20,9 @@ $('.slider').slick({
       breakpoint: 800,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,        
+        infinite: false,
+        dots: false
       }
     }        
   ]

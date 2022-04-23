@@ -444,28 +444,32 @@ main{
 .rowCarousel{
     background-color: antiquewhite;
     padding: 60px 60px 40px 60px;
-    height: 42em;    
+    height: auto;
+    margin: auto;
 }  
 
 .rowCarousel_z1{
     background-color: #f9f9f9;
-    padding: 40px 20px 40px 20px;
-    height: auto;    
-    /* border-bottom: gray dotted 1px; */
+    padding: 60px 60px 40px 60px;
+    border-bottom: gray dotted 1px;
+    height: auto;
+    margin: auto;
 }  
 
 .rowCarousel_z2{
     background-color: antiquewhite;
-    padding: 40px 20px 40px 20px;
+    padding: 60px 60px 40px 60px;
+    border-bottom: gray dotted 1px;
     height: auto;
-    /* border-bottom: gray dotted 1px; */
+    margin: auto;
 }  
 
 .rowShowCategorias{
     background-color: antiquewhite;
-    padding: 40px 20px 40px 20px;
+    padding: 60px 60px 40px 60px;
     border-bottom: gray dotted 1px;
     height: auto;
+    margin: auto;
 }
 
 .rowShowVantagensAfiliacao{    
@@ -479,9 +483,10 @@ main{
     border-right: tomato 10px solid;
     background-color: #f9f9f9;
     border-radius: 20px 0px 0px 0px;
-    margin: 15px;
+    margin: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: auto;
 }
 
 .margem{
