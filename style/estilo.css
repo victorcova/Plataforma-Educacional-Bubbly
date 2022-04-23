@@ -173,17 +173,28 @@ h3{
     color: #f9f9f9;
 }
 
-.txtBuscaMain{
+.txtBuscaMainCursos{      
     background-color: #f9f9f9;
-    padding: 12px;
+    padding: 11px 20px 12px 10px;
     border: 1px solid tomato;
     border-radius: 4px;
     font-family: Rubik;
-    font-size: 15px;
-    color: tomato;
-    float:left;
-    width: 400px;
-    margin-top: 40px;
+    font-size: 0.8em;
+    color: tomato;                
+    width: 30%;
+    margin-right: 10px;    
+}
+
+.btLupa{        
+    background-color: tomato;
+    padding: 11px;
+    border: 1px solid tomato;
+    border-radius: 4px;        
+    color: #f9f9f9;
+    text-align: center;        
+    width: 20px;    
+    text-align: center;
+    cursor: pointer;
 }
 
 .btCadastro{
@@ -215,6 +226,12 @@ h3{
     text-transform: uppercase;
     color: #f9f9f9;    
     cursor: pointer;
+}
+
+.buscarMainCursos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .btDivulgarCurso{
@@ -309,10 +326,11 @@ h3{
 }
 
 .rowMainPgCursos{    
-    position: relative;        
-    background-image: url("../img/bkgs/bkg-2.jpg");    
+    background-image: url("../img/bkgs/bkg-2.jpg");        
+    background-position: right top;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 75vh;
+    padding-top: 80px;
 }
 
 .rowMainPgAfiliacao{    
@@ -398,6 +416,10 @@ main{
     margin-top: -60px;    
 }
 
+.zebra1{
+    background-color: #f9f9f9;
+}
+
 /* -------------- CAROUSEL -------------- */
 
 .clear{
@@ -422,12 +444,26 @@ main{
     height: 42em;    
 }  
 
-.rowCarouselpgCursos{
-    background-color: #e6e6e6;
+.rowCarousel_z1{
+    background-color: #f9f9f9;
     padding: 40px 20px 40px 20px;
-    height: 65vh;
-    border-bottom: gray dotted 1px;
+    height: auto;
+    /* border-bottom: gray dotted 1px; */
 }  
+
+.rowCarousel_z2{
+    background-color: antiquewhite;
+    padding: 40px 20px 40px 20px;
+    height: auto;
+    /* border-bottom: gray dotted 1px; */
+}  
+
+.rowShowCategorias{
+    background-color: antiquewhite;
+    padding: 40px 20px 40px 20px;
+    border-bottom: gray dotted 1px;
+    height: auto;
+}
           
 .boxCurso{    
     border: 1px solid tomato;
@@ -524,11 +560,10 @@ main{
 .titCarouselpgCursos{
     font-family: Montserrat;
     font-weight: 800;
-    font-size: 30pt;        
-    color: tomato;    
+    font-size: 2em;        
+    color: black;    
     text-transform: uppercase;    
-    text-align: left;
-    padding-left: 328px;
+    text-align: center;
 }
 
 .subTitCarousel{
@@ -538,6 +573,25 @@ main{
     color: gray;
     text-align: center;
     padding-top: 10px;
+}
+
+.categCursos{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: auto;
+}
+.boxCategs{
+    border: 1px solid #464646;
+    border-left: 10px solid #464646;
+    border-radius: 0px 4px 4px 0px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
 }
 
 .box_carousel{    
