@@ -473,9 +473,11 @@ main{
 }
 
 .rowShowVantagensAfiliacao{    
-    padding: 40px 20px 40px 20px;
+    border-bottom: gray dotted 1px;
+    padding: 60px 60px 40px 60px;
     border-bottom: gray dotted 1px;
     height: auto;
+    margin: auto;
 }
           
 .boxCurso{    
@@ -623,7 +625,7 @@ main{
     text-align: center;
     margin: 10px;
     padding: 10px;
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 
