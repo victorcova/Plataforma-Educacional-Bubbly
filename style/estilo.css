@@ -7,15 +7,16 @@ body{
     font-family: Rubik;        
     min-height: 100vh;
     max-width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto;        
 }
 
-.rowMain{        
+.rowMain{            
     background-image: url("../img/bkgs/bkg-1.jpg");    
     background-position: right top;
     background-repeat: no-repeat;
     height: 80vh;
-    padding-top: 80px;
+    padding-top: 80px;            
+    transition: 1000ms all;
 }
 
 .titleMain{        
@@ -119,12 +120,12 @@ h3{
     background-color: #f9f9f9;    
     height: auto;
     width: 100%;
-    z-index: 1;
+    z-index: 1;    
 }
 
 .imgLogo{                
     width: 100px;
-    margin: 18px;
+    margin: 18px;    
 }
 
 .imgLogof{
@@ -232,7 +233,7 @@ h3{
     height: 18px;
     width: 110px;
     margin-right: 15px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .btBuscar{
@@ -352,14 +353,16 @@ h3{
     background-repeat: no-repeat;    
     padding-top: 5px;
     height: 50vh;
+    transition: 1000ms all;
 }
 
 .rowMainPgAfiliacao{    
     background-image: url("../img/bkgs/bkg-3.jpg");        
-    background-position: right top;
+    background-position: top center;
     background-repeat: no-repeat;
     height: 55vh;
     padding-top: 70px;
+    transition: 1000ms all;
 }
 
 main{    
@@ -436,8 +439,12 @@ main{
 }
 
 .socialSpacer{
-    margin: 10px;
+    margin-right: 20px;                
 }
+.socialSpacer:hover {
+    transform: scale(2);
+    transition: all .2s ease-in-out;
+  }
 
 /* -------------- CAROUSEL -------------- */
 
