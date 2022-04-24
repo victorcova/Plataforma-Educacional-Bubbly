@@ -133,6 +133,11 @@ h3{
     margin: 10px;
 }
 
+.imgLogoLogin{
+    width: 120px;
+    margin: 30px 10px 10px 10px;
+}
+
 
 .BEC{            
     display: inline-flex;    
@@ -444,7 +449,98 @@ main{
 .socialSpacer:hover {
     transform: scale(2);
     transition: all .2s ease-in-out;
-  }
+}
+
+.rowMainLogin{    
+    background-image: url("../img/bkgs/bkg-6.jpg");    
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.rowMainCadastro{
+    background-image: url("../img/bkgs/bkg-7.jpg");    
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.boxLogin{
+    position: absolute;
+    text-align: center;
+    font-family: Rubik;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;    
+    transition: 400ms all;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 350px;
+    height: 318px; 
+}
+
+.boxCadastro{
+    position: absolute;
+    text-align: center;
+    font-family: Rubik;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;    
+    transition: 400ms all;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 350px;
+    height: 480px; 
+}
+
+.inputUser{        
+    display:block;
+    font-family: Rubik;    
+    padding-left: 20px;
+    margin: auto;
+    margin-top: 8px;
+    width: 80%;
+    height: 40px;    
+}
+
+.inputPsw{        
+    display:block;
+    font-family: Rubik;
+    margin: auto;    
+    margin-top: 8px;
+    padding-left: 20px;    
+    width: 80%;
+    height: 40px;        
+}
+
+.btLogin{        
+    display:block;    
+    font-family: Rubik;
+    background-color: tomato;
+    border: none;
+    margin-left: 22px;
+    margin-top: 8px;
+    color: #f9f9f9;
+    text-transform: uppercase;        
+    width: 32%;
+    height: 40px; 
+    cursor: pointer;
+}
+
+.msgSemConta{        
+    display:block;
+    text-align: center;
+    font-family: Rubik;
+    margin: auto;
+    padding-top: 30px;  
+    color: #f9f9f9;
+}
 
 /* -------------- CAROUSEL -------------- */
 
