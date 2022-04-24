@@ -13,3 +13,7 @@ function pgEntrar() {
 function pgCadastrar() {    
     window.open('cadastro.html', '_blank');
 }
+
+function pgCursos() {    
+    window.location = 'cursos.html';
+}
