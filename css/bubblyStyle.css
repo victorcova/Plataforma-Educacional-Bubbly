@@ -55,17 +55,18 @@ body{
 
 .btn-tomato{
     background-color: tomato;
-    border-color: transparent;
+    border-color: tomato;
     color: #f9f9f9;
 }
 .btn-tomato:hover{
     background-color: #ce4229;
+    border-color: #ce4229;
     color: #f9f9f9;
 }
 .bg-tomato-dark{
-    background-color: tomato;
-    border-color: transparent;
-    color: #f9f9f9;
+    background-color: #ce4229;
+    border-color: #ce4229;
+    color: white;
 }
 
 
@@ -76,6 +77,7 @@ body{
 }
 .btn-tomato-outline:hover{
     background-color: tomato;
+    border-color: tomato;
     color: #f9f9f9;
 }
 .bg-tomato-outline{
@@ -83,6 +85,27 @@ body{
     border-color: tomato;
     color: tomato;
 }
+.border-tomato-outline{
+    background-color: #f9f9f9;
+    border-color: tomato;    
+}
+.text-tomato-link{
+  color: tomato;  
+  text-decoration: none;
+  text-decoration: underline;
+}
+.text-tomato-link:hover{
+  color: #ce4229;    
+  font-weight: 600;
+  text-decoration: underline;
+}
+.icon-tomato:hover{
+  color: tomato;
+  transform: scale(1.5);
+  transition: transform .2s;
+}
+
+
 
 
 .btn-bluebubbly{
@@ -118,6 +141,10 @@ body{
     color: #008686;
 }
 
+.form-check-input{
+  background-color: tomato !important;
+  border: tomato !important;
+}
 
 /* --------------------------------------------------------- */
 /* 
@@ -696,7 +723,7 @@ h1 {
    */
 
   body.body-top-padding {
-    padding-top: 167px;
+    /* padding-top: 167px; */
   }
   
   body a:hover {
@@ -911,8 +938,24 @@ h1 {
       margin-left: 0px;
     }
   }
+
   
-  .navbar .navbar-menu-wrapper .navbar-nav .nav-link {
+  /* .myactive{
+    border-bottom: tomato 2px solid;
+    color: tomato;	  
+	  animation: go-back 1s alternate; 
+  }
+
+  @keyframes go-back {
+    from {
+      transform: translateX(20px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } */
+  
+  /* .navbar .navbar-menu-wrapper .navbar-nav .nav-link {
     font-size: 0.9375rem;
     padding: 0px 17px;
     font-weight: 500;
@@ -957,4 +1000,4 @@ h1 {
     .navbar .navbar-collapse-logo {
       display: block;
     }
-  }
+  } */

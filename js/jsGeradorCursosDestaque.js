@@ -65,7 +65,8 @@ fetch(urlLocal, optionsLocal) // fez a promise
             card.appendChild(cardBody);            
 
             let h5TitCurso = document.createElement('h5');
-            h5TitCurso.setAttribute('class','card-title');
+            h5TitCurso.setAttribute('class','card-title pb-4');
+            h5TitCurso.setAttribute('style','font-weight: 800; text-transform: uppercase; color:black');
             let idTitCurso = 'idTitCurso'+[i];
             h5TitCurso.setAttribute('id',idTitCurso);
             cardBody.appendChild(h5TitCurso);
@@ -78,29 +79,29 @@ fetch(urlLocal, optionsLocal) // fez a promise
             cardBody.appendChild(ulInfoCurso);            
             
             let liRatingCurso = document.createElement('li');
-            liRatingCurso.setAttribute('class','list-group-item pb-2');
+            liRatingCurso.setAttribute('class','list-group-item pb-2 text-mutted');
             let idLiRatingCurso = 'rating'+[i];
             liRatingCurso.setAttribute('id',idLiRatingCurso);
             ulInfoCurso.appendChild(liRatingCurso);
             document.getElementById(idLiRatingCurso).append(`Avaliação: ${cursos[i].rating}/5.0`);
 
             let liQtdAulasCurso = document.createElement('li');
-            liQtdAulasCurso.setAttribute('class','list-group-item pb-2');
+            liQtdAulasCurso.setAttribute('class','list-group-item pb-2 text-mutted');
             let idLiQtdAulasCurso = 'qtdAulas'+[i];
             liQtdAulasCurso.setAttribute('id',idLiQtdAulasCurso);
             ulInfoCurso.appendChild(liQtdAulasCurso);
             document.getElementById(idLiQtdAulasCurso).append(`Quantidade: ${cursos[i].qtd_aulas} aulas`);
 
             let liNomeProfCurso = document.createElement('li');
-            liNomeProfCurso.setAttribute('class','list-group-item pb-2');
+            liNomeProfCurso.setAttribute('class','list-group-item pb-2 text-mutted');
             let idNomeProfCurso = 'idNomeProfCurso'+[i];
             liNomeProfCurso.setAttribute('id',idNomeProfCurso);
             ulInfoCurso.appendChild(liNomeProfCurso);
             document.getElementById(idNomeProfCurso).append(`Professor(a): ${cursos[i].nome_prof}`);
             
             let pDescricao = document.createElement('p')
-            pDescricao.setAttribute('class','card-text pt-3 ml-1');
-            pDescricao.setAttribute('style','text-align: left;');
+            pDescricao.setAttribute('class','card-text pt-3 ml-1 text-mutted');
+            pDescricao.setAttribute('style','text-align: left; font-weight: 300');
             let idDescricao = 'idDescricao'+[i];
             pDescricao.setAttribute('id',idDescricao);
             cardBody.appendChild(pDescricao);    
@@ -108,7 +109,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
 
             let btEmenta = document.createElement('button');
             btEmenta.setAttribute('type','button');
-            btEmenta.setAttribute('class','btn btn-dark me-2 float-end');
+            btEmenta.setAttribute('class','btn btn-tomato me-2 float-end');
             cardBody.appendChild(btEmenta);
             btEmenta.innerHTML = "Ver Cursos";
                             
