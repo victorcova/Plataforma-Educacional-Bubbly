@@ -7,13 +7,13 @@ body{
 }
 
 
-.carousel-inner {
-    padding: 3em;
-} 
+/* .carousel-inner {
+    padding: 2em;
+}  */
 .card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;    
+    border: none;        
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -878,16 +878,16 @@ h1 {
     margin-bottom: 7px;
   }
 
-  body.sidebar-open .fixed-top .navbar-brand-wrapper img {
+  /* body.sidebar-open .fixed-top .navbar-brand-wrapper img {
     display: none;
-  }
+  } */
 
   .header-small .navbar {
     background: white;
     padding: 10px 0px 10px 0px;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.8);
   }
   
   .header-small .navbar.fixed-top {
@@ -948,7 +948,7 @@ h1 {
   
   .navbar .navbar-menu-wrapper .navbar-nav .nav-link:hover {
     color: #ff0000;
-    transition: all 0.3s ease;
+    transition: all 1.3s ease;
   }
   
   .navbar .navbar-menu-wrapper .navbar-nav .nav-link.active {
@@ -961,7 +961,7 @@ h1 {
   
   @media (max-width: 992px) {
     .navbar .navbar-menu-wrapper .navbar-nav .nav-link {
-      font-size: 16px;
+      font-size: 6px;
     }
     .navbar .navbar-menu-wrapper.navbar-collapse {
       position: fixed;
@@ -984,4 +984,10 @@ h1 {
     .navbar .navbar-collapse-logo {
       display: block;
     }
+  }
+
+  #navBar{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
   }
