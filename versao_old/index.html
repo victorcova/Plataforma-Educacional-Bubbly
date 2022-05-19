@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <link rel="icon" type="image/x-icon" href="img/icons/bubbly-favicon.ico">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style/estilo.css">    
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">    
+    <title>Bubbly a sua Plataforma Educacional</title>
+    <script src="//code.jivosite.com/widget/ETXU8gRqo4" async></script>    
+</head>
+<body>
+    <!-- NAVEGAÇÃO -->
+    <header class="rowTopoSite">
+
+        <div>
+            <a href="index.html"><img class="imgLogo" src="img/icons/logo-bubbly.png"  alt="Imagem contendo o logo da plataforma de ensino"></a>
+        </div>
+
+        <nav>
+            <ul>                
+                <li class="navAtivo"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>                
+                <li><a href="cursos.html" id="listaDeCursos">cursos</a></li>
+                <li><a href="afiliacao.html">afilie-se</a></li>                
+            </ul>
+        </nav>
+
+        <div class="BEC">
+            <div>
+                <input class="txtBusca" type="text" placeholder="Busque seu curso" id="txtNomeCursoBusca">
+                <div id="lupa" onclick="buscarCurso()"></div>
+            </div>            
+            <div class="btEntrar" onclick="pgEntrar()">Entrar <i class="fa-solid fa-user-check"></i></div>  
+            <div id="check"></div>
+
+            <div class="btCadastro" onclick="pgCadastrar()">Cadastre-se <i class="fa-solid fa-user-plus"></i></div>            
+        </div>       
+        
+
+    </header>
+
+    <!-- SOBRE NÓS -->
+    <section class="rowMain">
+        <main>
+            <div class="titleMain">
+                <h1>Colocamos seu curso em <span class="tomato">evidência</span> para o mundo!</h1>
+            </div>
+                <p class="subTitleMain">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, distinctio eius aliquid.
+                </p>
+                <p class="subTitleMain">velit voluptas nulla recusandae ipsum et eum doloribus magni incidunt.</p>
+                <div class="buttonsMain">
+                  <div class="ctaMain" onclick="pgCadastrar()">quero me cadastrar</div>
+                  <div class="ctaMain" onclick="pgEntrar()">entrar</div>
+                  <div class="ctaMain" onclick="pgCursos()">explorar cursos</div>
+                </div>
+                <div class="arrowDown"><img src="img/icons/arrowDown.gif" width="20px"></div>                        
+        </main>        
+    </section>
+
+    <!-- SECTION: CARROSSEL CURSOS EM DESTAQUE -->    
+    <section class="rowCarousel">
+      <div class="titCarousel">Tudo em um só lugar</div>
+      <div class="subTitCarousel">Confira os mais bem avaliados</div>
+
+      <div class="slider">
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-tecnologia.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">JavaScript Básico</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">56 aulas</div>
+            <div class="margem bold">Professor(a): Rondson Lima</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div>          
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-gastronomia.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Gastronomia</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">89 aulas</div>
+            <div class="margem bold">Professor(a): Lisandro Motta</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-musica.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Música</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">212 aulas</div>
+            <div class="margem bold">Professor(a): Elayne Cliff</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-empreendedorismo.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Empreendedorismo</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">126 aulas</div>
+            <div class="margem bold">Professor(a): Dagobertto Lucca</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-educacao-fisica.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Educação Física</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">98 aulas</div>
+            <div class="margem bold">Professor(a): Traco Lopes</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-marketing.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Planejamento - Comunicação e Marketing</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">48 aulas</div>
+            <div class="margem bold">Professor(a): Helena de Sá</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-ingles.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Inglês Básico</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">100 aulas</div>
+            <div class="margem bold">John Cliverland</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+        <div>
+          <div class="boxCurso">
+            <div class="margem imgcurso"><img src="img/tag_cursos/tag-gramatica.jpg" width="100%" alt="foto do curso"></div>            
+            <div class="margem titcurso">Gramática Completa</div>
+            <div class="margem"><img src="img/icons/rating.png" height="10px" alt="icon-five-stars"></div>
+            <div class="margem bold">56 aulas</div>
+            <div class="margem bold">Edgard Costa</div>
+            <div class="margem txtdecricao">Lorem ipsum dolor sit amet, consec adipisicing elit. Ex illo odit officia, molestiae cum labore ducimus ab praesentium, provident reiciendis voluptas aliquid dolor fugiat? Exercitationem necessitatibus magni nemo ratione quis.</div>
+            <div class="margem ctacurso">ver ementa</div>
+          </div> 
+        </div>
+      </div>
+
+    </section>
+    
+    <!-- FOOTER -->    
+    <footer class="footer">
+
+        <div class="footer__addr">
+          <a href="index.html"><img class="imgLogof" src="img/icons/logo-bubbly-f.png"  alt="Logo Bubbly"></a>          
+          <h2>Contatos</h2>          
+          <address>
+            Brasília SCS 6 Bloco Antares Sala 223 - DF<br>                
+            <a class="footer__btn" href="mailto:bubbly@bubbly.com">Envie um e-mail</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Quem somos</h2>      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Nossa história</a>
+              </li>
+      
+              <li>
+                <a href="#">Parceiros</a>
+              </li>
+                  
+              <li>
+                <a href="#">Missão, visão e valores</a>
+              </li>
+            </ul>
+          </li>         
+
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Política de privacidade</a>
+              </li>
+              
+              <li>
+                <a href="#">Termos de uso</a>
+              </li>
+              
+              <li>
+                <a href="#">Mapa do site</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <h2 class="nav__title">Redes Sociais</h2>
+            
+            <ul class="nav__ul socialmedia">
+              <li class="socialSpacer">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              
+              <li class="socialSpacer">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              
+              <li class="socialSpacer">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+
+              <li class="socialSpacer">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              
+              <li class="socialSpacer">
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </li>
+
+
+            </ul>
+          </li>
+
+
+
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2022 | <span><i class="fa-solid fa-user-gear"></i> Desenvolvido por: Danilo Almeida e Victor Cova</span> | <em>For Tera DEV's</em></p>
+        </div>
+      </footer>
+
+    <!-- ACESSIBILIDADE -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- SCRIPTS -->    
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/cursos.js"></script>
+</body>
+</html>
