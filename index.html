@@ -13,6 +13,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">    
     <link rel="stylesheet" href="css/bubblyStyle.css">    
+
+    <!-- CAROUSEL -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.8.1/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css">
+
+
+
     <link rel="icon" type="image/x-icon" href="img/bubbly-imgs/icons/favicon.ico">    
 
     <title>Bubbly a sua plataforma de cursos online</title>
@@ -276,7 +285,7 @@
         
         
         <!-- CARDS CURSOS EM DESTAQUE API LOCAL -->
-        <section id="cardsCursosDestaque">
+        <!-- <section id="cardsCursosDestaque">
             
             <div class="carousel bg-dark pb-5" class="carousel slide carousel-fade" data-bs-ride="carousel" id="controlesCarousel">
 
@@ -289,23 +298,169 @@
                 <div class="container m-auto">
                     <div class="carousel-inner" id="carouselInner">                    
 
-                        <!--CARDS API -->         
-                                                
+                               
+                      
+                        <button class="carousel-control-prev" type="button" data-bs-target="#controlesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Avançar</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#controlesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Voltar</span>
+                        </button>
                     </div>                
-                </div>
+                </div>            
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#controlesCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#controlesCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>     
+            </div>            
+        </section> -->
+
+
+        
+        <!-- CAROUSEL TESTE ------------------------------------------------------------------------------- -->
+        <div class="container my-4">
+
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+            
+            <!--Controls-->
+            <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+            
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            
+            </ol>
+            <!--/.Indicators-->
+            
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+            
+            <!--First slide-->
+            <div class="carousel-item active">
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
             </div>
             
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            </div>
+            <!--/.First slide-->
+            
+            <!--Second slide-->
+            <div class="carousel-item">
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+            <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+            <a class="btn btn-primary">Button</a>
+            </div>
+            </div>
+            </div>
+            
+            </div>
+            <!--/.Second slide-->
+            
+            
+            
+            </div>
+            <!--/.Slides-->
+            
+            </div>
+            <!--/.Carousel Wrapper-->
+        </div>
 
-        </section>
+
+
+
+
 
 
         <!-- TESTIMONIAL CARDS API ONLINE -->
@@ -486,15 +641,22 @@
 
     </footer>    
     
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS -->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>   
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>     -->
+    <!-- <script src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.8.1/js/mdb.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"></script> -->
+
 
     <script src="js/jsGeradorCursosDestaque.js"></script>
     <script src="js/jsGeradorCursosTestimonials.js"></script>    
-    <script src="js/js.js"></script>    
-    <script src="js/js-carousel.js"></script>
+    <!-- <script src="js/js-carousel.js"></script> -->
+    <script src="js/js.js"></script>        
 </body>
 </html>

@@ -30,8 +30,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
         console.log('RESPOSTA EM ARRAY VINDA DO OBJETO CAPTANDO O ATRIBUTO DADOS:\n',cursos);
         console.log('RESPOSTA EM ARRAY VINDA DO OBJETO CAPTANDO O ATRIBUTO PAGE (EXEMPLO):\n',nome_curso);
 
-        //EXIBIR CURSOS EM DESTAQUE        
-        var itemInicial = 0;
+        //EXIBIR CURSOS EM DESTAQUE                
         for (let i = 0; i < cursos.length; i++) {
             
             let carouselInner = document.getElementById('carouselInner');                    
